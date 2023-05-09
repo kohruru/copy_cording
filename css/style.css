@@ -433,6 +433,11 @@ hr {
 /*PCサイズの設定*/
 @media screen and (min-width: 835px) {
   
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
   .aside {
     display: none;
   }
@@ -440,10 +445,13 @@ hr {
   .flex-pc-page-parent {
     display: flex;
     height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .flex-pc-page-child {
     width: 100%;
+    /* max-width: 800px; */
   }
   
   .last-child {
