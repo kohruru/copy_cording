@@ -319,7 +319,7 @@ hr {
 }
 
 .link-card-zone {
-  padding-left: 20px;
+  padding: 25px 25px 25px 25px;
   background-color: #EDF2F6;
   border-top: 1px solid #E3EDF3;
 }
@@ -376,37 +376,8 @@ hr {
   flex-direction: row;
 }
 
-.footer-you {
-  padding-top: 20px;
-}
-
-.flex-wrap-parent {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-.flex-wrap-child {
-  width: 40%;
-}
-
-.list-zone p{
-  font-size: 13px;
-  color:  #93a5b1;
-  padding-top: 5px;
-  padding-left: 15px;
-}
-
-.flex-wrap-parent {
-  padding-top: 20px;
-  padding-left: 15px;
-  border-bottom: 1px solid #E3EDF3;
-  padding-bottom: 40px;
-}
-
-.flex-wrap-child h2 {
-  padding-top: 30px;
+.flex-wrap-child a {
+  text-decoration: none;
 }
 
 .flex-wrap-child li {
@@ -414,10 +385,6 @@ hr {
   padding-top: 15px;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.82);
-}
-
-.flex-wrap-child a {
-  text-decoration: none;
 }
 
 .footer-logo {
@@ -431,7 +398,7 @@ hr {
 }
 
 /*PCサイズの設定*/
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 935px) {
   
 .header {
   max-width: 1200px;
@@ -451,7 +418,6 @@ hr {
   
   .flex-pc-page-child {
     width: 100%;
-    /* max-width: 800px; */
   }
   
   .last-child {
@@ -604,10 +570,11 @@ hr {
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-between;
+    gap: 0 30px;
   }
   
   .link-card-flex-wrap-child {
-    width: 40%;
+    width: 47%;
   }
 
   .flex-wrap-parent {
@@ -621,12 +588,44 @@ hr {
     width: 40%;
   }
 
-  
+  .footer-list-all {
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .list-zone {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 0;
+    border-bottom: 1px solid #E3EDF3;
+    max-width: 1200px;
+  }
+
+  .list-zone p{
+    font-size: 13px;
+    color:  #93a5b1;
+    padding-top: 5px;
+    min-width: 220px;
+  }
+
+  .zenn-icon-zone {
+    padding-left: 50px;
+  }
+
+  .flex-wrap-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pc-child {
+    min-width: 170px;
+  }
 
 }
 
 /* iPadの設定 */
-@media screen and (min-width: 600px) and (max-width: 835px) {
+@media screen and (min-width: 700px) and (max-width: 935px) {
 
   .main-center , .center {
     margin: 0 20px 0 20px;
@@ -654,7 +653,7 @@ hr {
   }
   
   .link-card-flex-wrap-child {
-    width: 40%;
+    width: 47%;
   }
 
   .flex-wrap-parent {
@@ -664,13 +663,45 @@ hr {
     height: 100%;
   }
   
+  .footer-you {
+    padding-top: 20px;
+  }
+  
+  .flex-wrap-parent {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 15px;
+    border-bottom: 1px solid #E3EDF3;
+    padding-bottom: 40px;
+  }
+  
   .flex-wrap-child {
     width: 40%;
   }
+  
+  .list-zone p{
+    font-size: 13px;
+    color:  #93a5b1;
+    padding-top: 5px;
+    padding-left: 15px;
+    white-space: nowrap;
+  }
+  
+  .list-zone br {
+    display: none;
+  } 
+
+  .flex-wrap-child h2 {
+    padding-top: 30px;
+  }
+  
   }
 
 /* iPhoneの設定 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
   .main-center , .center {
     margin: 0;
@@ -693,6 +724,40 @@ hr {
     display: none;
   }
 
+  .footer-you {
+    padding-top: 20px;
+  }
+  
+  .flex-wrap-parent {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 15px;
+    border-bottom: 1px solid #E3EDF3;
+    padding-bottom: 40px;
+  }
+  
+  .flex-wrap-child {
+    width: 40%;
+  }
+  
+  .list-zone p{
+    font-size: 13px;
+    color:  #93a5b1;
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+  
+  .list-zone br {
+    display: none;
+  } 
+
+  .flex-wrap-child h2 {
+    padding-top: 30px;
+  }
+  
 }
 
  
