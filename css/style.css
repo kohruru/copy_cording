@@ -91,7 +91,7 @@ body {
   border: #93A5B1;
 }
 
-.main {
+main {
   background-color: #EDF2F6;
 }
 
@@ -321,7 +321,6 @@ hr {
 .link-card-zone {
   padding: 25px 25px 25px 25px;
   background-color: #EDF2F6;
-  border-top: 1px solid #E3EDF3;
 }
 
 .link-card-zone h1 {
@@ -398,7 +397,7 @@ hr {
 }
 
 /*PCサイズの設定*/
-@media screen and (min-width: 935px) {
+@media screen and (min-width: 1050px) {
   
 .header {
   max-width: 1200px;
@@ -564,6 +563,15 @@ hr {
     margin-bottom: 40px;
   }
 
+  .link-card-zone {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .link-card-zone-out {
+    background-color: #EDF2F6;
+  }
+
   .link-card-flex-wrap-parent {
     display: flex;
     align-items: flex-start;
@@ -596,6 +604,7 @@ hr {
 
   .list-zone {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     padding: 50px 0;
     border-bottom: 1px solid #E3EDF3;
@@ -609,13 +618,11 @@ hr {
     min-width: 220px;
   }
 
-  .zenn-icon-zone {
-    padding-left: 50px;
-  }
 
   .flex-wrap-parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 0 60px;
   }
 
   .pc-child {
@@ -625,7 +632,7 @@ hr {
 }
 
 /* iPadの設定 */
-@media screen and (min-width: 700px) and (max-width: 935px) {
+@media screen and (min-width: 700px) and (max-width: 1050px) {
 
   .main-center , .center {
     margin: 0 20px 0 20px;
@@ -663,6 +670,10 @@ hr {
     height: 100%;
   }
   
+  .footer-list-all {
+    padding-left: 30px;
+  }
+
   .footer-you {
     padding-top: 20px;
   }
@@ -676,6 +687,7 @@ hr {
     padding-left: 15px;
     border-bottom: 1px solid #E3EDF3;
     padding-bottom: 40px;
+    gap: 45px 45px;
   }
   
   .flex-wrap-child {
